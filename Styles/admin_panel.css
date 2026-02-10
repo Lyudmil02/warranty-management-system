@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f7fd;
+    color: #2d006e;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(146, 25, 246, 0.15);
+    width: 100%;
+	max-width: 900px;
+    padding: 40px 50px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+    color: #C289FB;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #C289FB;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover td {
+    background-color: #f8f1ff;
+}
+
+.approve-btn, .decline-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.approve-btn {
+    background-color: #C289FB;
+}
+.approve-btn:hover {
+    background-color: #7a14d0;
+}
+
+.decline-btn {
+    background-color: #f57f8d;
+}
+.decline-btn:hover {
+    background-color: #b12c59;
+}
+
+.message {
+    background-color: #e8dbff;
+    color: #5a00b3;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.no-users {
+    margin-top: 30px;
+    font-weight: 500;
+    color: #C289FB;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #9219f6;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+        align-items: flex-start;
+    }
+	
+    table, thead, tbody, th, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr:first-child {
+        display: none;
+    }
+
+    tr {
+        background: #fff;
+        border-radius: 14px;
+        padding: 12px 14px;
+        margin-bottom: 14px;
+        box-shadow: 0 6px 16px rgba(146, 25, 246, 0.12);
+    }
+
+    td {
+        border: none;
+        padding: 6px 0;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    td::before {
+        content: attr(data-label) ": ";
+        font-weight: 600;
+        color: #2d006e;
+    }
+
+    td[data-label="Действие"] a {
+        display: inline-block;
+        margin: 6px 8px 0 0;
+        font-size: 13px;
+    }
+}

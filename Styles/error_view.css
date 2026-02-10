@@ -1,0 +1,48 @@
+body {
+    background: #f3e9ff;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(146, 25, 246, 0.20);
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to   {opacity: 1; transform: translateY(0);}
+}
+
+.icon {
+    font-size: 60px;
+    color: #c30000;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #7a14d0;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #4a007c;
+    margin: 15px 0;
+}
+
+.auto-msg {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #7a14d0;
+    opacity: 0.7;
+}
