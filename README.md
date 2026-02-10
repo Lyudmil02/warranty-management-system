@@ -1,22 +1,25 @@
 # Warranty Management System
 
 ## Overview
-Internal business management system designed to handle warranty records, user approvals, and automated notifications.
+Internal web-based business management system designed to handle warranty records, user approvals, and automated notifications.
 
-The system focuses on real-world workflows such as account activation, admin approval, warranty lifecycle tracking, and proactive reminders.
+The system follows real-world workflows such as account activation, admin approval, warranty lifecycle tracking, and proactive reminder notifications.
 
 ---
 
 ## Problem
-Businesses often manage warranties manually, which leads to missed expiration dates, lack of visibility, and poor communication with users.
+Many businesses manage warranties manually, which often leads to:
+- Missed expiration dates
+- Poor visibility over active warranties
+- Inefficient communication with users
 
 ---
 
 ## Solution
 A centralized system that:
-- Manages warranty records and their lifecycle
-- Controls user access through verification and admin approval
-- Automatically notifies users before warranties expire
+- Manages warranty records throughout their entire lifecycle
+- Controls user access via email verification and admin approval
+- Automatically notifies users before warranty expiration
 - Provides clear dashboards and status tracking
 
 ---
@@ -24,11 +27,28 @@ A centralized system that:
 ## Key Features
 - Secure user registration with email verification
 - Admin approval workflow before account activation
-- Role-based access (admin / user)
+- Role-based access control (Admin / User)
 - Dashboard with warranty statistics
-- Warranty lifecycle tracking (active, expiring, expired)
+- Warranty lifecycle tracking (Active, Expiring, Expired)
 - Automated email reminders before expiration
 - In-app notification system for important events
+
+---
+
+## Screenshots
+Below are real screenshots from the running system.
+
+### Login & Account Activation
+![Login](screenshots/login.png)
+
+### User Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Admin Panel
+![Admin Panel](screenshots/admin-panel.png)
+
+### Add Warranty
+![Add Warranty](screenshots/add-warranty.png)
 
 ---
 
@@ -41,7 +61,7 @@ A centralized system that:
 ---
 
 ## What This Project Demonstrates
-- Ability to design real-world business systems
-- Implementation of user onboarding and approval workflows
+- Design and implementation of real-world business systems
+- User onboarding and admin approval workflows
 - Time-based automation and notification logic
 - Backend-driven dashboards and data management
